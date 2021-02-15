@@ -1,0 +1,244 @@
+.other-pages {
+    height: 70vh;
+    padding-top: 25px;
+}
+
+.blog-header {
+    background-image: url(../assets/blog-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.other-pages .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 100%;
+}
+
+.other-pages h1 {
+    margin-top: auto;
+    margin-bottom: 215px;
+
+    text-align: center;
+    font-size: 8rem;
+    line-height: 9.2rem;
+}
+
+.blog-header h1 {
+    margin-right: 100px;
+}
+
+.blog-main {
+    display: flex;
+    justify-content: space-between;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+
+    width: 26%;
+    height: 100%;
+    margin-top: 120px;
+    margin-left: 110px;
+    padding: 0 20px 20px 20px;
+    
+    background-color: $lightBackground;
+}
+
+.aside-image {
+    width: 150%;
+    height: auto;
+
+    position: relative;
+    right: 50%;
+    top: -15px;
+}
+
+aside h3 {
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+
+    margin-bottom: 20px;
+}
+
+aside p {
+    font-size: 1.8rem;
+    padding-bottom: 60px;
+} 
+
+.aside-posts ul {
+    margin-left: 15px;
+    flex-direction: column;
+
+    font-size: 1.8rem;
+    font-weight: 400;
+    list-style-type: disc;
+}
+
+.aside-posts ul li {
+    padding: 5px;
+}
+
+.blog {
+    width: 62%;
+    margin-top: -220px;
+}
+
+.posted-blog {
+    width: 100%;
+}
+
+.blog-image {
+    width: 96%;
+    height: auto;
+    margin: 20px 0 0 35px;
+
+    box-shadow: -35px 35px $lightShadow;
+}
+
+.blog-post {
+    margin-right: 110px;
+    padding: 50px 50px 20px 50px;
+
+    border: 5px solid $lightShadow;
+    border-right: none;
+    border-top: none;
+}
+
+.blog-post h2 {
+    font-size: 4.2rem;
+    padding: 15px 0;
+}
+
+time {
+    font-size: 1.7rem; 
+}
+
+.blog-text {
+    margin-top: 55px;
+}
+
+.blog-comments {
+    margin-right: 110px;
+}
+
+.blog-comments h2 {
+    margin-top: 35px;
+    padding-left: 45px;
+
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+}
+
+.posted-comments {
+    display: flex;
+    margin: 40px 0 80px 0;
+    padding-left: 45px;
+}
+
+.user-image {
+    width: 80px;
+    height: 80px;
+    margin-right: 15px;
+}
+
+.comment-text {
+    padding: 0 0 10px 10px;
+    width: 90%;
+}
+
+.comment-text p:first-child {
+    line-height: 1.8rem;
+}
+
+.comment-text p:nth-child(2) {
+    padding-top: 15px;
+}
+
+.blog-comments form {
+    margin-bottom: 80px;
+}
+
+//contact-us styles
+.contact-header {
+    background-image: url(../assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-header h1 {
+    margin-left: 20px;
+    margin-bottom: 230px;
+    font-size: calc(5rem + 1.4vw);
+}
+
+.contact-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.contact-info a {
+    color: $textColor;
+}
+
+.social-nav .fab {
+    padding: 10px 20px;
+    font-size: 2.2rem;
+
+    transition: all 0.2s;
+}
+
+.social-nav .fab:hover,
+.social-nav .fab:focus,
+a[href*="mail"]:hover,
+a[href*="mail"]:focus {
+    color: $lightShadow;
+}
+
+.social-nav .fab:first-child {
+    padding-left: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+a[href*="mail"] {
+    padding: 15px 0 25px 0;
+
+    text-transform: uppercase;
+    font-family: $primaryFont;
+    font-size: 2.2rem;
+
+    transition: all 0.2s;
+}
+
+address a {
+    display: block;
+    
+    text-transform: none;
+    font-family: $bodyFont;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 2.7rem;
+    letter-spacing: 1px;
+
+    transition: all 0.2s;
+}
+
+address a[href*="tel"]:hover,
+address a[href*="tel"]:focus,
+address a:last-child:hover,
+address a:last-child:focus {
+    color: $hoverColor;
+}

@@ -1,0 +1,270 @@
+.index-header {
+    height: 90vh;
+    padding-top: 25px;
+
+    background-image: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url(../assets/header-image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+
+    position: relative;
+}
+
+.index-header h1 {
+    max-width: 30%;
+    margin-top: 80px;
+}
+
+.header-image {
+    width: 53vw;
+    height: 90vh;
+    
+    position: absolute;
+    top: 20vh;
+    right: 0;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 230px 125px 200px;
+
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 3.6rem;
+    letter-spacing: 1px;
+}
+
+.about p {
+    margin: 25px 0 35px 0;
+
+    text-align: left;
+}
+
+.find-out {
+    background-color: $lightShadow;
+    color: $darkBackground;
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border: none;
+    padding: 10px 30px;
+    transition: all 0.2s;
+}
+
+.find-out:hover,
+.find-out:focus {
+    background-color: $lightBackground;
+    color: $textColor;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    margin: 0 auto;
+
+    background-color: $lightBackground;
+}
+
+.new-additions,
+.new-feature {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.new-feature .text-content {
+    padding-left: 110px;
+    text-align: right;
+}
+
+.new-additions .text-content {
+    padding-right: 110px;
+}
+
+.text-content {
+    width: 40%;
+    margin: auto 0;
+    
+}
+
+.text-content h2 {
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.text-content p {
+    margin: 25px 0 35px 0;
+}
+
+.new-additions .image-container,
+.new-feature .image-container {
+    width: 44%;
+    max-width: 610px;
+    max-height: auto;
+}
+
+.new-additions .image-container {
+    position: relative;
+    left: 0;
+    top: -45px;
+}
+
+.new-feature .image-container {
+    position: relative;
+    right: 0px;
+    top: 45px;
+}
+
+.new-additions img {
+    box-shadow: 45px 45px $lightShadow;
+}
+
+.new-feature img {
+    box-shadow: -45px 45px $lightShadow;
+}
+
+.read-more {
+    background-color: $darkBackground;
+    color: $textColor;
+
+    font-size: 1.7rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+
+    border: none;
+    padding: 10px 25px;
+
+    transition: all 0.2s;
+}
+
+.read-more:hover,
+.read-more:focus {
+    background-color: $lightShadow;
+    color: $darkBackground;
+}
+
+.page-directory {
+    padding-top: 175px;
+    padding-bottom: 40px;
+}
+
+.page-directory ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page-directory li {
+    width: 50%;
+    position: relative;
+}
+
+.page-directory .fas {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px 8px;
+    
+    font-size: 2.5rem;
+    text-align: center;
+
+    position: absolute;
+    top: -10px;
+    left: 10px;
+
+    border-radius: 60px;
+    box-shadow: 0px 0px 2px $lightShadow;
+    color: $darkBackground;
+    background-color: $lightShadow;
+}
+
+.hover-state {
+    transition: all 0.2s;
+}
+
+.hover-state:hover .fas,
+.hover-state:focus .fas {
+    background-color: $lightBackground;
+    color: $textColor;
+}
+
+.page-directory  li {
+    padding-left: 80px;
+    padding-right: 15px;
+}
+
+.page-directory a h2 {
+    color: $textColor;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+
+.page-directory a p {
+    font-family: $bodyFont;
+    font-weight: 400;
+    color: $textColor;
+    text-transform: none;
+
+    padding: 15px 0 50px;
+}
+
+.hover-state:hover h2,
+.hover-state:focus h2,
+.hover-state:hover p,
+.hover-state:focus p {
+    color: $hoverColor;
+}
+
+.monthly-profile .wrapper {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 100px;
+}
+
+.monthly-profile .image-container {
+    width: auto;
+    max-width: 275px;
+    max-height: auto;
+}
+
+.monthly-profile img {
+    box-shadow: 35px 35px $lightShadow;
+}
+
+.monthly-profile .text-content {
+    width: 75%;
+    margin-left: 120px;
+}
+
+.monthly-profile h2 {
+    font-size: 3.6rem;
+    letter-spacing: 1px;
+}
+
+.monthly-profile p {
+    margin-bottom: 50px;
+}
+
+.gallery {
+    background-color: $lightBackground;
+}
+
+.gallery .wrapper {
+    display: flex;
+    padding: 50px 0;
+}
+
+.gallery-item {
+    margin-right: 30px;
+}
+
+.gallery-item:last-child {
+    margin: 0;
+}
