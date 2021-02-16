@@ -48,6 +48,8 @@ textarea {
     height: 200px;
     margin: 40px 0 0 0;
 
+    resize: none;
+
     color: $textColor;
 
     transition: all 0.2s;
