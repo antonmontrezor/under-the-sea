@@ -1,0 +1,24 @@
+.hamburger-menu {
+    transform: rotate(90deg);
+}
+
+.menu-list.hamburger-list {
+    display: block;
+    width: 100%;
+    
+    position: absolute;
+    top: 65px;
+    right: 19px;
+
+    text-align: right;
+}
+
+.menu-item.hamburger-item {
+    display: block;
+    height: 25px;
+}
+
+.menu-link.hamburger-link {
+    padding: 0;
+    font-size: 1.7rem;
+}

@@ -9,7 +9,6 @@ fieldset {
 
 input, 
 textarea {
-    width: 100%;
     margin: 20px;
     padding: 20px;
     border: 2px solid $lightShadow;
@@ -20,6 +19,7 @@ textarea {
 }
 
 input {
+    flex-grow: 1;
     margin: 0;
     border-top: 2px solid transparent;
     border-right: 2px solid transparent;

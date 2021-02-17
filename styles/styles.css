@@ -290,6 +290,11 @@ img {
   max-width: 100%;
 }
 
+:required {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .main-nav {
   width: 100%;
 }
@@ -319,6 +324,30 @@ img {
 .main-nav li a:hover,
 .main-nav li a:focus {
   color: #86E0F9;
+}
+
+.hamburger-menu {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.menu-list.hamburger-list {
+  display: block;
+  width: 100%;
+  position: absolute;
+  top: 65px;
+  right: 19px;
+  text-align: right;
+}
+
+.menu-item.hamburger-item {
+  display: block;
+  height: 25px;
+}
+
+.menu-link.hamburger-link {
+  padding: 0;
+  font-size: 1.7rem;
 }
 
 .index-header {
@@ -887,7 +916,6 @@ fieldset {
 
 input,
 textarea {
-  width: 100%;
   margin: 20px;
   padding: 20px;
   border: 2px solid #86E0F9;
@@ -896,6 +924,9 @@ textarea {
 }
 
 input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   margin: 0;
   border-top: 2px solid transparent;
   border-right: 2px solid transparent;
@@ -1368,6 +1399,7 @@ footer a:focus {
 @media (max-width: 450px) {
   .index-header h1 {
     max-width: 80%;
+    margin-top: 100px;
   }
   .main-nav {
     text-align: right;
